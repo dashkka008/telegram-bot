@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Отчёт</title>
+</head>
+<body>
+    <h1>Отчёт</h1>
+    {% if chart %}
+    <img src="data:image/png;base64,{{ chart }}" alt="График загрузки офиса">
+    {% else %}
+    <p>Нет данных для формирования графика.</p>
+    {% endif %}
+    <br>
+    <a href="/">Назад в админ-панель</a>
+</body>
+</html>
